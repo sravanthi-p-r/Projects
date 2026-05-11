@@ -117,7 +117,6 @@ protected Dialog onCreateDialog(int id) {
         dialog = null;
     }
     return dialog;
-}
 AlertDialog.Builder builder = new AlertDialog.Builder(this);
 builder.setMessage("Are you sure you want to exit?")
        .setCancelable(false)
@@ -160,6 +159,63 @@ progressDialog = new ProgressDialog(mContext);
 progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 progressDialog.setMessage("Loading...");
 progressDialog.setCancelable(false);
+Context mContext = getApplicationContext();
+Dialog dialog = new Dialog(mContext);
+dialog.setContentView(R.layout.custom_dialog);
+dialog.setTitle("Custom Dialog");
+TextView text = (TextView) dialog.findViewById(R.id.text);
+text.setText("Hello, this is a custom dialog!");
+ImageView image = (ImageView) dialog.findViewById(R.id.image);
+image.setImageResource(R.drawable.android);
+
+    AlertDialog.Builder builder;
+AlertDialog alertDialog;
+
+
+Context mContext = getApplicationContext();
+LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(LAYOUT_INFLATER);
+View layout = inflater.inflate(R.layout.custom_dialog,
+                               (ViewGroup) findViewById(R.id.layout_root));
+
+
+TextView text = (TextView) layout.findViewById(R.id.text);
+text.setText("Hello, this is a custom dialog!");
+ImageView image = (ImageView) layout.findViewById(R.id.image);
+image.setImageResource(R.drawable.android);
+
+
+builder = new AlertDialog.Builder(mContext);
+builder.setView(layout);
+alertDialog = builder.create();
+}
+
+// Create an anonymous implementation of OnClickListener
+private OnClickListener mCorkyListener = new OnClickListener() {
+    public void onClick(View v) {
+      // do something when the button is clicked
+    }
+};
+
+protected void onCreate(Bundle savedValues) {
+    // Capture our button from layout
+    Button button = (Button)findViewById(R.id.corky);
+    // Register the onClick listener with the implementation above
+    button.setOnClickListener(mCorkyListener);
+}
+
+public class ExampleActivity extends Activity implements OnClickListener {
+    protected void onCreate(Bundle savedValues) {
+        Button button = (Button)findViewById(R.id.corky);
+        button.setOnClickListener(this);
+    }
+
+    // Implement the OnClickListener callback
+    public void onClick(View v) {
+      // do something when the button is clicked
+    }
+}
+
+
 
 
 
