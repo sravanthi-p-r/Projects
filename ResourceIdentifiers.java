@@ -43,4 +43,15 @@ mFlipper.setInAnimation(AnimationUtils.loadAnimation(this,
 TextView msgTextView = (TextView)findViewByID(R.id.msg);
 msgTextView.setText(R.string.hello_message);
 
+public class MyActivity extends Activity
+{
+    public void onStart() 
+    {
+        requestScreenFeatures(FEATURE_BADGE_IMAGE);
+        super.onStart();
+        setBadgeResource(android.R.drawable.sym_def_app_icon);
+    }
+}
+
+
 
