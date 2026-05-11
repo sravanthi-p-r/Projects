@@ -58,4 +58,37 @@
             android:text="Hello, I am a Button" />
 </LinearLayout>
 
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_game"
+          android:title="New Game" />
+    <item android:id="@+id/quit"
+          android:title="Quit" />
+</menu>
+
+<intent-filter label="Resize Image">
+    <category android:name="android.intent.category.ALTERNATIVE" />
+    <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+</intent-filter>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              >
+    <ImageView android:id="@+id/image"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:layout_marginRight="10dp"
+               />
+    <TextView android:id="@+id/text"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:textColor="#FFF"
+              />
+</LinearLayout>
+
+
 
