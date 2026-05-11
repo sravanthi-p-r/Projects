@@ -1,0 +1,16 @@
+MyApp/
+    res/
+        values-en/
+            strings.xml
+        values-fr/
+            strings.xml
+
+MyApp/
+    res/
+        drawable-en-rUS-port-160dpi-finger-keysexposed-qwerty-dpad-480x320/
+MyApp/
+    res/
+        drawable-en-rUS-finger/
+        drawable-port/
+        drawable-port-160dpi/
+        drawable-qwerty/
