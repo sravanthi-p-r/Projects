@@ -59,9 +59,7 @@ private void getColumnData(Cursor cur){
             name = cur.getString(nameColumn);
             phoneNumber = cur.getString(phoneColumn);
            
-	    // Do something with the values. 
-            ... 
-
+	    // Do something with the values.
 
         } while (cur.moveToNext());
 
