@@ -215,6 +215,13 @@ public class ExampleActivity extends Activity implements OnClickListener {
     }
 }
 
+ protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setTheme(android.R.style.Theme_Light);
+    setContentView(R.layout.linear_layout_3);
+}
+
+
 
 
 
