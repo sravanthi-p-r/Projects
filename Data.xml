@@ -1,0 +1,32 @@
+<data android:
+host="string"
+      android:
+mimeType="string"
+      android:
+path="string"
+      android:
+pathPattern="string"
+      android:
+pathPrefix="string"
+      android:
+port="string"
+      android:
+scheme="string" />
+<data android:
+host="string"
+      android:
+mimeType="string"
+      android:
+path="string"
+      android:
+pathPattern="string"
+      android:
+pathPrefix="string"
+      android:
+port="string"
+      android:
+scheme="string" />
+<intent-filter>
+    <data android:scheme="something" />
+    <data android:host="project.example.com" />
+</intent-filter>
