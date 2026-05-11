@@ -152,7 +152,14 @@ builder.setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
     }
 });
 AlertDialog alert = builder.create();
+ProgressDialog dialog = ProgressDialog.show(MyActivity.this, "", 
+                        "Loading. Please wait...", true);
 
+ProgressDialog progressDialog;
+progressDialog = new ProgressDialog(mContext);
+progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+progressDialog.setMessage("Loading...");
+progressDialog.setCancelable(false);
 
 
 
