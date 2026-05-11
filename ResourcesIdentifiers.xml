@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText id="text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:textColor="@color/opaque_red"
+    android:text="Hello, World!" />
+
+<?xml version="1.0" encoding="utf-8"?>
+<EditText id="text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:textColor="@android:color/opaque_red"
+    android:text="Hello, World!" />
+
+<?xml version="1.0" encoding="utf-8"?>
+<EditText id="text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:textColor="@android:color/opaque_red"
+    android:text="@string/hello_world" />
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable id="my_background">@android:drawable/theme2_background</drawable>
+</resources>
+
+<?xml version="1.0" encoding="utf-8"?>
+<EditText id="text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:textColor="?android:textDisabledColor"
+    android:text="@string/hello_world"/>
+
+
