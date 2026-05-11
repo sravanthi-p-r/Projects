@@ -53,5 +53,11 @@ public class MyActivity extends Activity
     }
 }
 
-
-
+public class MyActivity extends Activity
+{
+    public void onStart() 
+    {
+    super.onStart();
+        setTheme(android.R.style.Theme_Black);
+    }
+}
