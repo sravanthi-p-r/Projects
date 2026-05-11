@@ -1,0 +1,13 @@
+<provider name="com.example.autos.AutoInfoProvider"
+          authorities="com.example.autos.autoinfoprovider" 
+           />
+</provider>
+
+content://com.example.autos.autoinfoprovider/honda 
+content://com.example.autos.autoinfoprovider/gm/compact 
+content://com.example.autos.autoinfoprovider/gm/suv
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.app.myapp" >
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+</manifest>
