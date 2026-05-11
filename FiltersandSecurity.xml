@@ -1,0 +1,20 @@
+<intent-filter . . . >
+    <action android:name="com.example.project.SHOW_CURRENT" />
+    <action android:name="com.example.project.SHOW_RECENT" />
+    <action android:name="com.example.project.SHOW_PENDING" />
+    . . .
+</intent-filter>
+<intent-filter . . . >
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    . . .
+</intent-filter>
+<intent-filter . . . >
+    <data android:type="video/mpeg" android:scheme="http" . . . /> 
+    <data android:type="audio/mpeg" android:scheme="http" . . . />
+    . . .
+</intent-filter>
+<intent-filter . . . >
+    <action android:name="code android.intent.action.MAIN" />
+    <category android:name="code android.intent.category.LAUNCHER" />
+</intent-filter>
