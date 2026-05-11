@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <uses-permission />
+    <permission />
+    <permission-tree />
+    <permission-group />
+    <instrumentation />
+    <uses-sdk />
+    <application>
+        <activity>
+            <intent-filter>
+                <action />
+                <category />
+                <data />
+            </intent-filter>
+            <meta-data />
+        </activity>
+        <activity-alias>
+            <intent-filter> </intent-filter>
+            <meta-data />
+        </activity-alias>
+        <service>
+            <intent-filter>  </intent-filter>
+            <meta-data/>
+        </service>
+        <receiver>
+            <intent-filter>  </intent-filter>
+            <meta-data />
+        </receiver>
+        <provider>
+            <grant-uri-permission />
+            <meta-data />
+        </provider>
+        <uses-library />
+        <uses-configuration />  
+    </application>
+</manifest>
+
+<manifest >
+    <permission android:name="com.example.project.DEBIT_ACCT" . . . />
+    <application>
+        <activity android:name="com.example.project.FreneticActivity">
+                  android:permission="com.example.project.DEBIT_ACCT" >
+        </activity>
+    </application>
+   
+    <uses-permission android:name="com.example.project.DEBIT_ACCT" />
+   
+</manifest>
+
