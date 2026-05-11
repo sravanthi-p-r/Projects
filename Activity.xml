@@ -1,0 +1,52 @@
+<activity android:
+allowTaskReparenting=["true" | "false"]
+          android:
+alwaysRetainTaskState=["true" | "false"]
+          android:
+clearTaskOnLaunch=["true"" | "false"]
+          android:
+configChanges=[one or more of: "mcc" "mnc" "locale" 
+                                 "touchscreen" "keyboard" "keyboardHidden" 
+                                 "navigation" "orientation" "fontScale"]
+          android:
+enabled=["true" | "false"]
+          android:
+excludeFromRecents=["true" | "false"]
+          android:
+exported=["true" | "false"]
+          android:
+finishOnTaskLaunch=["true" | "false"]
+          android:
+icon="drawable resource"
+          android:
+label="string resource"
+          android:
+launchMode=["multiple" | "singleTop" | 
+                              "singleTask" | "singleInstance"]
+          android:
+multiprocess=["true" | "false"]
+          android:
+name="string"
+          android:
+noHistory=["true" | "false"]  
+          android:
+permission="string"
+          android:
+process="string"
+          android:
+screenOrientation=["unspecified" | "user" | "behind" |
+                                     "landscape" | "portrait" | 
+                                     "sensor" | "nonsensor"]
+          android:
+stateNotNeeded=["true" | "false"]
+          android:
+taskAffinity="string"
+          android:
+theme="resource or theme" 
+          android:
+windowSoftInputMode=[one or more of: "stateUnspecified" 
+                                       "stateUnchanged" "stateHidden" 
+                                       "stateAlwaysHidden" "stateVisible" 
+                                       "stateAlwaysVisible" "adjustUnspecified" 
+                                       "adjustResize" "adjustPan"] >  
+</activity>
