@@ -2,6 +2,11 @@ import android.provider.Contacts.People;
 import android.content.ContentUris;
 import android.net.Uri;
 import android.database.Cursor;
+import android.provider.Contacts.People;
+import android.content.ContentResolver;
+import android.content.ContentValues; 
+import android.provider.Contacts.People;
+
 
 
 // Use the ContentUris method to produce the base URI for the contact with _ID == 23.
@@ -41,9 +46,6 @@ Cursor managedCursor = managedQuery(contacts,
                          // Put the results in ascending order by name
                          People.NAME + " ASC");
 
-import android.provider.Contacts.People;
-
-
 private void getColumnData(Cursor cur){ 
     if (cur.moveToFirst()) {
 
@@ -53,6 +55,17 @@ private void getColumnData(Cursor cur){
         int nameColumn = cur.getColumnIndex(People.NAME); 
         int phoneColumn = cur.getColumnIndex(People.NUMBER);
         String imagePath; 
+	ContentValues values = new ContentValues();
+
+
+// Add Abraham Lincoln to contacts and make him a favorite.
+values.put(People.NAME, "Abraham Lincoln");
+// 1 = the new contact is added to favorites
+// 0 = the new contact is not added to favorites
+values.put(People.STARRED, 1);
+
+
+Uri uri = getContentResolver().insert(People.CONTENT_URI, values);
     
         do {
             // Get the field values
@@ -63,7 +76,11 @@ private void getColumnData(Cursor cur){
 
         } while (cur.moveToNext());
 
-
     }
 }
+
+
+
+
+
 
